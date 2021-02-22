@@ -1,0 +1,39 @@
+h1{text-align :center;
+  color :#F5188A
+    }
+h2{color:grey}
+h3{color:grey}
+div{color:brown}
+body { background-color :#FBFCD4 }
+h3{ color: grey
+}
+h4{color:grey}
+div{
+  width:800pt;
+  padding:5pt;
+  margin:10pt;
+border:1px solid lightblue;
+  
+  font size :15pt;
+  }
+#d1{
+  background-color: pink;}
+#d2{
+  background-color: yellow;
+  }
+.pinkBack{
+  background-color: pink;
+}
+.yellowBack{
+  background-color:yellow;
+}
+h9{
+ color:grey;
+}
+
+.boxid{
+  background-color: solid;
+  padding: 2px 5px 7px 9px;
+  border:1px 2px 4px 8px solid blue;
+  border-radius:25px;
+}
