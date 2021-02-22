@@ -1,0 +1,74 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "sans-serif";
+	
+	background: url("abc.jpeg") no-repeat;
+	background-size: cover;
+}
+.box{
+	width: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: white;
+}
+.box h1{
+	float:left;
+	font-size: 60px;
+	border-bottom: 6px solid #2ecc71;
+	margin-bottom: 50px;
+	padding:13px 0;
+    color :white;
+}
+.textbox {
+	width:100%;
+	overflow: hidden;
+	font-size: 20px;
+	padding: 10px 40px;
+	margin: 15px 0;
+	border-bottom: 1px solid #4caf50;
+
+	}
+.textbox fas fa-lock, .textbox fas fa-user{
+	width: 30px;
+	float: left;  
+}
+
+.textbox input[type= "text"]:focus{
+	width: 200px;
+	border-color:#2ecc71;
+
+}
+
+	.box input[type= "password"]{
+    width: 200px;
+	border-color:#2ecc71;
+	background: white;
+}
+.box input[type= "text"]{
+    width: 200px;
+	border-color:#2ecc71;
+	background: white;
+}
+.textbox input{
+background: none;
+
+margin : 0px 10px;
+border: none;
+outline:none;
+transition: 0.25s;
+}
+.box input[type= "submit"]:hover{
+	background: #999999;
+}
+.box input[type= "text"]:hover{
+	background: #999999;}
+.box input[type= "password"]:hover{
+	background: #999999;
+}
+.btn{
+	float:right;
+	color: white;
+}
