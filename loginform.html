@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form Fill Up</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+       margin:0;
+       padding:0;
+      }
+      body {
+        background-color:  #547bc4;
+        padding:10px;
+        margin-top:40px;
+        margin-bottom:30px;
+      }
+      a {
+        text-decoration: none;
+      }
+      #container {
+         display:block;
+        margin-left:auto;
+        margin-right:auto;
+        max-width:35%;  
+      }
+      .form-wrap {
+        background-color: white;
+      }
+      .form-wrap h1,
+      .form-wrap p {
+       text-align: center;
+      }
+      .form-wrap .form-group {
+       text-align: left;
+       margin-left:10px;
+      }
+      .form-wrap .form-group label {
+       text-align: left;
+       display: block;
+      }
+      .form-wrap .form-group input {
+        padding:10px;
+        width:90%;  
+      }
+      .form-group #sex{
+        padding:10px;
+        width:90%;
+      }
+      .form-group input[type="radio"] {
+        max-width:5%;
+      display:inline;
+      }
+      .form-group input[type="checkbox"] {
+        width:5%;
+      display:inline;
+      }
+      #first-name:hover,#last-name:hover,#password:hover,#password2:hover,#email:hover,#place:hover,#sex:hover,#age:hover,#date:hover{
+         background-color: lightgreen;
+        }
+      .form-wrap button {
+        width:90%;
+        padding:10px;
+        cursor:pointer;
+        margin-left:auto;
+        margin-top:20px;
+        margin-right:auto;
+        display:block;
+        background-color:#49c1a2;  
+      }
+      .form-wrap button:hover {
+        background-color:lightblue;
+        color:blue;
+      }
+      .form-wrap .bottom-text {
+        font-size:small;
+        text-align:center;
+        margin-top:10px;
+        font-size: medium;
+      }
+      footer {
+        text-align: center;
+        font-size: large;
+        margin-top: 10px;
+      }
+      footer a {
+       color:#fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="form-wrap">
+        <h1>Sign Up</h1>
+        <p>It's free and only takes a minute</p>
+        <form>
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" name="firstName" id="first-name" required/>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="lastName" id="last-name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required/>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="form-group">
+            <label for="password2">Confirm Password</label>
+            <input type="password" name="pasword2" id="password2" />
+          </div>
+          <div class="form-group">
+            <label for="sex">Sex</label>
+            <select name="sex" id="sex">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+          <label for="date">Date of Birth</label>
+          <input type="date" name="date" id="date">
+      </div>
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age">
+    </div>
+    <div class="form-group">
+     <br> <label for="recommend">Recommend Our Channel</label>
+      <input type="radio" name="likely"  id="likely" value="likely" >
+      <label for="recommendation">Likely</label>
+      <input type="radio" name="unlikely"  id="unlikely" value="unlikely">
+      <label for="recommendation">Unlikely</label>
+  </div>
+  <div class="form-group">
+    <br>
+    <label for="Subscribe">Subscribe To Us</label>
+    <input type="checkbox" name="yes"  id="yes" value="yes" >
+    <label for="subscription">YES</label>
+    <input type="checkbox" name="no"  id="no" value="no">
+    <label for="subscription">NO</label>
+</div>
+          <button type="submit" class="btn">Sign Up</button>
+          <p class="bottom-text">
+            By clicking the Sign Up button, you agree to our
+            <a href="#">Terms & Conditions</a> and
+            <a href="#">Privacy Policy</a>
+          </p>
+        </form>
+      </div>
+      <footer>
+        <p>Already have an account? <a href="#">Login Here</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
